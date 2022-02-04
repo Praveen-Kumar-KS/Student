@@ -4,4 +4,18 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Admin\" />
+    <Folder Include="Controllers\Student\" />
+    <Folder Include="Student.Business\Models\Admin\" />
+    <Folder Include="Student.Business\Models\Student\" />
+    <Folder Include="Student.Business\Services\Admin\" />
+    <Folder Include="Student.Business\Services\Extensions\" />
+    <Folder Include="Student.Business\Services\Student\" />
+    <Folder Include="Student.Data\Entities\" />
+    <Folder Include="Student.Data\Enums\" />
+    <Folder Include="Views\Admin\" />
+    <Folder Include="Views\Students\" />
+  </ItemGroup>
+
 </Project>
