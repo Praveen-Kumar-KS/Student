@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Student.Student.Data
+namespace Student.Student.Business.Models.Students
 {
-    public class StudentDbContext
+    public class StudentsModel
     {
         //Delete this file
     }

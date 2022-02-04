@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Student.Student.Data
+namespace Student.Student.Data.Entities
 {
-    public class StudentDbContext
+    public class StudentEntity
     {
-        //Delete this file
+        //Delete this File
     }
 }

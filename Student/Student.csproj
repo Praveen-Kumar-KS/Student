@@ -7,13 +7,6 @@
   <ItemGroup>
     <Folder Include="Controllers\Admin\" />
     <Folder Include="Controllers\Student\" />
-    <Folder Include="Student.Business\Extensions\" />
-    <Folder Include="Student.Business\Models\Admin\" />
-    <Folder Include="Student.Business\Models\Students\" />
-    <Folder Include="Student.Business\Services\Admin\" />
-    <Folder Include="Student.Business\Services\Students\" />
-    <Folder Include="Student.Data\Entities\" />
-    <Folder Include="Student.Data\Enums\" />
     <Folder Include="Views\Admin\" />
     <Folder Include="Views\Students\" />
   </ItemGroup>

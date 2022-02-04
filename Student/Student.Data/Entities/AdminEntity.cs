@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Student.Student.Data
+namespace Student.Student.Data.Entities
 {
-    public class StudentDbContext
+    public class AdminEntity
     {
         //Delete this file
     }
