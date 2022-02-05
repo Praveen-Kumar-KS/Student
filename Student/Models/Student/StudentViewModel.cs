@@ -14,5 +14,6 @@ namespace Student.Models.Student
         public string Mobile { get; set; }
         public string Department { get; set; }
         public string Password { get; set; }
+        public SubjectViewModel Subject { get; set; }
     }
 }
