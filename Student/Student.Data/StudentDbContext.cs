@@ -7,6 +7,6 @@ namespace Student.Student.Data
 {
     public class StudentDbContext
     {
-        //Delete this file
+        //Delete 
     }
 }
