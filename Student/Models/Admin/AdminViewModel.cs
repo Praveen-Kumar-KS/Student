@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Student.Student.Business.Models.Admin
+namespace Student.Models.Admin
 {
-    public class AdminModel
+    public class AdminViewModel
     {
         public int Id { get; set; }
         public string Name { get; set; }
