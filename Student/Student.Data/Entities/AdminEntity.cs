@@ -7,6 +7,6 @@ namespace Student.Student.Data.Entities
 {
     public class AdminEntity
     {
-        //Delete this file
+        
     }
 }

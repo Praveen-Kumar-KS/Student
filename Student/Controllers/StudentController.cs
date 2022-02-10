@@ -6,15 +6,11 @@ using System.Threading.Tasks;
 
 namespace Student.Controllers
 {
-    public class HomeController : Controller
+    public class StudentController : Controller
     {
         public IActionResult Index()
         {
-            return View("Index");
-        }
-        public IActionResult Register()
-        {
-            return View("~/Views/Student/StudentRegisterPartialView.cshtml");
+            return View();
         }
     }
 }

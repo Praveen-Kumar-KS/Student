@@ -1,5 +1,73 @@
-﻿@using Student.Models
-@model LoginViewModel
+﻿@using Student.Models.Student
+@model StudentViewModel
 @{
-    ViewData["Title"] = "Login";
+    ViewData["Title"] = "Log In";
 }
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/login.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<form asp-controller="AdminController" asp-action="Index" method="post" role="form">
+    <div class="loginBody">
+        <h3>Student Login</h3>
+        <label for="username">Username</label>
+        @*<input type="text" placeholder="Email or Phone" id="username">*@
+        @Html.EditorFor(model => model.RegisterNumber)
+
+        <br />
+        <label for="password">Password</label>
+        @Html.EditorFor(model => model.Password)
+        @*<input type="password" placeholder="Password" id="password">*@
+        <br />
+        <button>Log In</button>
+        <div class="row">
+            <p class="mb-0">Don’t have an account?></p>
+            <button type="submit">Sign Up </button>
+
+        </div>
+
+    </div>
+</form>
+
+@*<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+    <form asp-controller="Home" asp-action="RegistrationEntry" method="post" role="form">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="card m-t-20">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12"><h6 class="card-header bold">Defaults</h6></div>
+                </div>
+                <div class="card-body p-t-0">
+                    <div class="row">
+                        <div class="col-xl-1 col-lg-1 col-md-2 col-sm-12 col-12 m-b-20">
+                            <div class="txt2 ">HOME</div>
+                            <h6 class="figure-title">First Name</h6>
+                            <input asp-for="@Model.FirstName">
+                            <h6 class="figure-title">Last Name</h6>
+                            <input asp-for="@Model.LastName">
+                            <h6 class="figure-title">Mobile</h6>
+                            <input asp-for="@Model.Mobile">
+                            <h6 class="figure-title">Occupation</h6>
+                            <input asp-for="@Model.Occupation">
+                            <h6 class="figure-title">Email</h6>
+                            <input asp-for="@Model.Email">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+
+                @Html.HiddenFor(x => x.Id)
+
+                <button class="btn float-right btn-primary">SAVE CHANGES</button>
+            </div>
+        </div>
+    </form>
+</div>*@

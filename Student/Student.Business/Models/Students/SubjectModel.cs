@@ -14,6 +14,6 @@ namespace Student.Student.Business.Models.Students
         public int Subject4 { get; set; }
         public int Subject5 { get; set; }
         public int Subject6 { get; set; }
-        public double Cgpa { get; set; }
+        public double Gpa { get; set; }
     }
 }

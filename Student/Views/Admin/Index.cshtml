@@ -1,4 +1,33 @@
-﻿@*
-*@
+﻿@using Student.Models.Admin
+@model AdminViewModel
+
 @{
+    ViewData["Title"] = "Admin";
 }
+
+<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+<link href="~/css/login.css" rel="stylesheet" />
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+<form asp-controller="HomeController" asp-action="Index" method="post" role="form">
+    <div class="loginBody">
+        <h3>Admin Login</h3>
+        <label for="email">Email</label>
+        @*<input type="text" placeholder="Email or Phone" id="username">*@
+        @Html.EditorFor(model => model.Email)
+
+        <br />
+        <label for="password">Password</label>
+        @Html.EditorFor(model => model.Password)
+        @*<input type="password" placeholder="Password" id="password">*@
+        <br />
+        <button>Log In</button>
+        @*<a asp-controller="SignUp" asp-action="Index"></a>*@
+    </div>
+</form>
